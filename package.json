@@ -1,0 +1,16 @@
+{
+  "name": "sld-transform",
+  "version": "1.0.0",
+  "description": "translate csv to sld",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zte10191772",
+  "license": "MIT",
+  "dependencies": {
+    "d3": "^4.8.0",
+    "xml": "^1.0.1"
+  }
+}
