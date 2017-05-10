@@ -1,2 +1,0 @@
-文件路径: C:\Users\10191772\Desktop\sldTransform\test\demo.csv
-文件夹路径：C:\Users\10191772\Desktop\sldTransform\test\dest\

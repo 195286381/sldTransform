@@ -1,0 +1,5 @@
+SLD文件名,SLD标题,渲染属性名,渲染区间段数,渲染区间,渲染颜色,渲染区间描述
+lte_xxxxx_grid1.sld,sld_tilte,value,2,2<x<4|4<=x<5,#112222|#112233,"(1,2]|(2,5]"
+lte_xxxxx_grid2.sld,sld_tilte,value,2,2<x<4|4<=x<5,#112222|#112233,"(1,2]|(2,5]"
+lte_xxxxx_grid3.sld,sld_tilte,value,2,2<x<4|4<=x<5,#112222|#112233,"(1,2]|(2,5]"
+lte_xxxxx_grid4.sld,sld_tilte,value,2,2<x<4|4<=x<5,#112222|#112233,"(1,2]|(2,5]"
