@@ -11,7 +11,7 @@
                 <sld:SemanticTypeIdentifier>generic:geometry</sld:SemanticTypeIdentifier>
                 <sld:SemanticTypeIdentifier>simple</sld:SemanticTypeIdentifier>
                 <sld:Rule>
-                    <sld:Name>2&lt;x&lt;32</sld:Name>
+                    <sld:Name>(1,2]</sld:Name>
                     <sld:Abstract></sld:Abstract>
                     <ogc:Filter>
                         <ogc:And>
@@ -21,40 +21,40 @@
                             </ogc:PropertyIsGreaterThan>
                             <ogc:PropertyIsLessThan>
                                 <ogc:PropertyName>value</ogc:PropertyName>
-                                <ogc:Literal>32</ogc:Literal>
+                                <ogc:Literal>4</ogc:Literal>
                             </ogc:PropertyIsLessThan>
                         </ogc:And>
                     </ogc:Filter>
                     <sld:PolygonSymbolizer>
                         <sld:Fill>
-                            <sld:CssParameter name="fill">#234224</sld:CssParameter>
+                            <sld:CssParameter name="fill">#112222</sld:CssParameter>
                         </sld:Fill>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#234224</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#112222</sld:CssParameter>
                         </sld:Stroke>
                     </sld:PolygonSymbolizer>
                 </sld:Rule>
                 <sld:Rule>
-                    <sld:Name>33&lt;x&lt;45</sld:Name>
+                    <sld:Name>(2,5]</sld:Name>
                     <sld:Abstract></sld:Abstract>
                     <ogc:Filter>
                         <ogc:And>
-                            <ogc:PropertyIsGreaterThan>
+                            <ogc:PropertyIsGreaterThanOrEqualTo>
                                 <ogc:PropertyName>value</ogc:PropertyName>
-                                <ogc:Literal>33</ogc:Literal>
-                            </ogc:PropertyIsGreaterThan>
+                                <ogc:Literal>4</ogc:Literal>
+                            </ogc:PropertyIsGreaterThanOrEqualTo>
                             <ogc:PropertyIsLessThan>
                                 <ogc:PropertyName>value</ogc:PropertyName>
-                                <ogc:Literal>45</ogc:Literal>
+                                <ogc:Literal>5</ogc:Literal>
                             </ogc:PropertyIsLessThan>
                         </ogc:And>
                     </ogc:Filter>
                     <sld:PolygonSymbolizer>
                         <sld:Fill>
-                            <sld:CssParameter name="fill">#232333</sld:CssParameter>
+                            <sld:CssParameter name="fill">#112233</sld:CssParameter>
                         </sld:Fill>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#232333</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#112233</sld:CssParameter>
                         </sld:Stroke>
                     </sld:PolygonSymbolizer>
                 </sld:Rule>
