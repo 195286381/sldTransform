@@ -12,9 +12,5 @@
   "dependencies": {
     "d3": "^4.8.0",
     "xml": "^1.0.1"
-  },
-  "devDependencies": {
-    "ava": "^0.19.1",
-    "chai": "^3.5.0"
   }
 }
