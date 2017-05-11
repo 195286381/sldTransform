@@ -29,9 +29,11 @@
                     <sld:PolygonSymbolizer>
                         <sld:Fill>
                             <sld:CssParameter name="fill">#112222</sld:CssParameter>
+                            <sld:CssParameter name="fill-opacity">1</sld:CssParameter>
                         </sld:Fill>
                         <sld:Stroke>
                             <sld:CssParameter name="stroke">#112222</sld:CssParameter>
+                            <sld:CssParameter name="stroke-width">1</sld:CssParameter>
                         </sld:Stroke>
                     </sld:PolygonSymbolizer>
                 </sld:Rule>
@@ -53,9 +55,11 @@
                     <sld:PolygonSymbolizer>
                         <sld:Fill>
                             <sld:CssParameter name="fill">#112233</sld:CssParameter>
+                            <sld:CssParameter name="fill-opacity">1</sld:CssParameter>
                         </sld:Fill>
                         <sld:Stroke>
                             <sld:CssParameter name="stroke">#112233</sld:CssParameter>
+                            <sld:CssParameter name="stroke-width">1</sld:CssParameter>
                         </sld:Stroke>
                     </sld:PolygonSymbolizer>
                 </sld:Rule>
