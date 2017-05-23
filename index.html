@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SLD转换工具</title>
+    <style>
+      /* basic.css */
+      body, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, form, legend {
+        margin: 0;
+      }
+      /* general.css */
+      body {
+        font: 12px/1.5 'Microsoft Yahei', Arial, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 2em;
+
+        color: black;
+      }
+      .wrap {
+        padding: 20px;
+        min-width: 440px;
+      
+        text-align: left;
+      }
+      .wrap div {
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+
+      button {
+        width: 100px;
+
+        font-size: 12px;
+        border-radius: 3px;
+        cursor: pointer;
+        
+        outline: none;
+      }
+      input {
+        width: 300px;
+        border-radius: 3px;
+      }
+
+      span {
+        display: inline-block;
+        width: 60px;
+
+        font-weight: 400;
+        text-align: center;
+      }
+
+      .fileInput, .dirInput, .outputConsoleWrap {
+        text-align: center;
+      }
+
+      textarea {
+        display: none;
+        resize: none;
+      }
+      
+      .translateContainer {
+        text-align: center;
+      }
+
+      .translateContainer button {
+        font-size: 16px;
+        border-radius: 3px;
+        cursor: not-allowed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>SLD转换工具</h1>
+      <div class="fileInput">
+        <span>CSV文件:</span>
+        <input type="text" name="" id="filePathText" disabled>
+        <button id="fileName">选择文件</button>
+      </div>
+      <div class="dirInput">
+        <span>文件夹:</span>
+        <input type="text" name="" id="dirPathText" disabled>
+        <button id="dirInput">选择文件夹</button>
+      </div>
+      <div class="translateContainer">
+        <button id="translate" disabled="disabled">执行转换</button>
+      </div>
+      <div class="outputConsoleWrap">
+        <textarea cols="56" rows= "6" readonly id="outputConsole"></textarea>
+      </div>
+    </div>
+  </body>
+  <!-- 渲染进程能够调用NODE.JS的库 -->
+  <script>
+    require('./renderer.js')
+  </script>
+</html>

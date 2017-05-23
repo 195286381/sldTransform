@@ -1,16 +1,24 @@
 {
-  "name": "sld-transform",
+  "name": "sldTranslate",
   "version": "1.0.0",
-  "description": "translate csv to sld",
-  "main": "index.js",
+  "description": "A minimal Electron application",
+  "main": "main.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "ava test.js"
+    "test": "mocha --recursive --watch",
+    "start": "electron .",
+    "package": "electron-packager ./ --platform=win32"
   },
-  "author": "zte10191772",
-  "license": "MIT",
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "electron": "~1.6.2",
+    "electron-packager": "^8.7.0",
+    "mocha": "^3.4.1"
+  },
   "dependencies": {
     "d3": "^4.8.0",
+    "react-addons-pure-render-mixin": "^15.5.2",
     "xml": "^1.0.1"
   }
 }

@@ -1,6 +1,6 @@
-SLD�ļ���,SLD����,��Ⱦ������,��Ⱦ�������,��Ⱦ����,��Ⱦ��ɫ,��Ⱦ��������
-lte_xxxxx_grid1.sld,sld_tilte,value,2,2<x<4|4<=x<5,#112222|#112233,"(1,2]|(2,5]"
-lte_xxxxx_grid2.sld,sld_tilte,value,2,2<x<4|4<=x<5,#112222|#112233,"(1,2]|(2,5]"
-lte_xxxxx_grid3.sld,sld_tilte,value,2,2<x<4|4<=x<5,#112222|#112233,"(1,2]|(2,5]"
-lte_xxxxx_grid4.sld,sld_tilte,value,2,2<x<4|4<=x<5,#112222|#112233,"(1,2]|(2,5]"
-lte_С��_cell.sld,sld_tilte,,1,,#122222,
+SLD����,SLD�ļ���,SLD����,��Ⱦ����ֵ,��Ⱦ����,��Ⱦ����,��Ⱦ��ɫ,��Ⱦ��������
+1,let_voltesetupfail_grid.sld,sld_description,value,3,x<100|120<=x<400|x>=400,#123456|#123743|#243434,low|middle|high
+2,let_voltexxxl_grid.sld,sld_description,value,3,x<100|120<=x<400|x>=400,#123456|#123743|#243434,low|middle|high
+3,let_volxxxxl_grid.sld,sld_description,value,3,x<100|120<=x<400|x>=400,#123456|#123743|#243434,low|middle|high
+4,let_voltesetupfail_cell.sld,sld_description,,1,,#234567,
+    
