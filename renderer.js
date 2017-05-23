@@ -32,6 +32,7 @@ ipcRenderer.on('getDirPath', (event, args) => { // 监听获取到的文件夹�
     enableTranslate();
 })
 
+// TODO: 完善单元测试
 function enableTranslate() { // 文件名和文件路径都是输入后开启转换.
     let fileContent = filePathText.value;
     let dirContent= dirPathText.value;
@@ -56,7 +57,7 @@ translate.onclick = () => {
     console.log('---------------------------------------------------------------');
     console.log(`fileContent: ${fileContent}\n dirContenteDir: ${dirContenteDir}`);
     console.log('---------------------------------------------------------------');
-    
+
     try {
         console.log(111);
         const checkInfo = checkFile(fileContent);
