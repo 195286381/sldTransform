@@ -20,6 +20,7 @@ const expect = require('chai').expect
  */
 
 describe('validatorMiddlewares 校验', () => {
+
   //////////////
   // 中间件校验 //
   //////////////
@@ -81,6 +82,7 @@ describe('validatorMiddlewares 校验', () => {
     const newValidator = new Validator()
     newValidator.addCheckMiddleware(middlewares.checkRenderColor)
     let params, checkInfo
+
     it('测试用例1, 执行校验', () => {
       params = {
         rowNum: 1,
@@ -90,6 +92,7 @@ describe('validatorMiddlewares 校验', () => {
     checkInfo = newValidator.execValidate(params)
     expect(checkInfo.isCorrect).to.be.equal(true)
     })
+
     it('测试用例2, 执行校验', () => {
       params = {
         rowNum: 1,
@@ -99,6 +102,7 @@ describe('validatorMiddlewares 校验', () => {
     checkInfo = newValidator.execValidate(params)
     expect(checkInfo.isCorrect).to.be.equal(true)
     })
+
     it('测试用例3, 执行校验', () => {
       params = {
         rowNum: 1,
@@ -108,6 +112,7 @@ describe('validatorMiddlewares 校验', () => {
     checkInfo = newValidator.execValidate(params)
     expect(checkInfo.isCorrect).to.be.equal(false)
     })
+
     it('测试用例4, 执行校验', () => {
       params = {
         rowNum: 1,
@@ -117,7 +122,6 @@ describe('validatorMiddlewares 校验', () => {
     checkInfo = newValidator.execValidate(params)
     expect(checkInfo.isCorrect).to.be.equal(false)
     })
-
   });
 
   describe('文件名检测中间件 checkFileName', () => {
