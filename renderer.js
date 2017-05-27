@@ -73,5 +73,3 @@ translate.onclick = () => {
             showInfo(error);
     }
 }
-
-
