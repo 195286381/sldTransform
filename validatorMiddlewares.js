@@ -193,6 +193,16 @@ function checkDivisionNum(params, addErrorLine) {
   }
 }
 
+function checkSLDType(params, addErrorInfo) {
+  const { rowNum, type} = params
+  var typeAry = [1, 2, 3, 4, 5]
+  if (!typeAry.some(typeValue => {
+    return typeValue === type;
+  })) {
+    addErrorInfo(rowNum, '错误的SLD类型设置');
+  }
+}
+
 
  /////////////////
 // 导出检查中间间 //
@@ -203,7 +213,8 @@ const checkMiddlewares = {
   checkRenderColor,
   checkRenderDivision,
   checkParamsLength,
-  checkDivisionNum
+  checkDivisionNum,
+  checkSLDType
 }
 
 module.exports = checkMiddlewares

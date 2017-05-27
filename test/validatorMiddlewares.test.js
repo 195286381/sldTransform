@@ -232,4 +232,28 @@ describe('validatorMiddlewares 校验', () => {
     })
   });
 
+  describe('检查SLD类型中间件 checkSLDType', () => {
+    const newValidator = new Validator()
+    newValidator.addCheckMiddleware(middlewares.checkSLDType)
+    let params, checkInfo
+
+    it('测试用例1', () => {
+      params = {
+        rowNum: 1,
+        type: 1,
+      }
+      checkInfo = newValidator.execValidate(params)
+      expect(checkInfo.isCorrect).to.be.equal(true)
+    })
+
+     it('测试用例2', () => {
+      params = {
+        rowNum: 1,
+        type: '1',
+      }
+      checkInfo = newValidator.execValidate(params)
+      expect(checkInfo.isCorrect).to.be.equal(false)
+    })
+  });
+
 });

@@ -9,7 +9,7 @@ class Validator {
       isCorrect: true,
       Info: ''
     }
-    this.middleWares = [] // init middleware
+    this.middleWares = [] // init middlewarex
   }
 
   /**
@@ -56,9 +56,8 @@ class Validator {
 
     const addErrorLine = this._addErrorLine.bind(this)
     this.middleWares.forEach(fn => {fn(params, addErrorLine)})
-    return this.checkInfo;
+    return this.checkInfo
   }
-
 }
 
 module.exports = Validator
