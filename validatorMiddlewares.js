@@ -186,7 +186,11 @@ function checkParamsLength (params, addErrorLine) {
  * @api public
  */
 function checkDivisionNum(params, addErrorLine) {
-  // TODO:
+  const { rowNum, divisionNum } = params
+  var numReg = /^[1-9]\d*$/
+  if (!numReg.test(divisionNum)) {
+    addErrorLine(rowNum, '错误的分段数设置')
+  }
 }
 
 
@@ -199,6 +203,7 @@ const checkMiddlewares = {
   checkRenderColor,
   checkRenderDivision,
   checkParamsLength,
+  checkDivisionNum
 }
 
 module.exports = checkMiddlewares

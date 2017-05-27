@@ -199,4 +199,37 @@ describe('validatorMiddlewares 校验', () => {
     })
   });
 
+  describe('检查渲染区间分段中间件 checkDivisionNum', () => {
+    const newValidator = new Validator()
+    newValidator.addCheckMiddleware(middlewares.checkDivisionNum)
+    let params, checkInfo
+
+    it('测试用例1', () => {
+      params = {
+        rowNum: 1,
+        divisionNum: '1',
+      }
+    checkInfo = newValidator.execValidate(params)
+    expect(checkInfo.isCorrect).to.be.equal(true)
+    })
+
+    it('测试用例2', () => {
+      params = {
+        rowNum: 1,
+        divisionNum: 'a1',
+      }
+    checkInfo = newValidator.execValidate(params)
+    expect(checkInfo.isCorrect).to.be.equal(false)
+    })
+
+    it('测试用例3', () => {
+      params = {
+        rowNum: 1,
+        divisionNum: '01',
+      }
+    checkInfo = newValidator.execValidate(params)
+    expect(checkInfo.isCorrect).to.be.equal(false)
+    })
+  });
+
 });
